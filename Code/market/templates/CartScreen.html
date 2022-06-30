@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- Basic -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <!-- Site Metas -->
+   <meta name="keywords" content="" />
+   <meta name="description" content="" />
+   <meta name="author" content="" />
+   <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="">
+   <title>LoveBox</title>
+
+
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+   <!-- font awesome style -->
+
+   <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" />
+   <!-- Custom styles for this template -->
+
+   <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+   <!-- responsive style -->
+
+   <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+   <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+               <a class="navbar-brand" href="/"><img width="250"
+                     src="{{ url_for('static', filename='images/logo.png') }}" alt="#" /></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class=""> </span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="true"> <span class="nav-label">About <span
+                                 class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                           <li><a href="{{url_for('about')}}">About Us</a></li>
+                           <li><a href="{{url_for('testimonial')}}">Testimonial</a></li>
+                           <li><a href="{{url_for('FAQ')}}">FAQ</a></li>
+                           <li><a href="{{url_for('contact')}}">Contact</a></li>
+
+                        </ul>
+                     </li>
+
+
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Products <span
+                                 class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                           <li><a href="{{url_for('Product')}}">Single Products</a></li>
+                           <li><a href="{{url_for('chooseBox')}}">Surprise boxes</a></li>
+
+
+                        </ul>
+                     </li>
+
+
+                     {% if current_user.is_authenticated %}
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('CartScreen')}}">
+                           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                              style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                              <g>
+                                 <g>
+                                    <path
+                                       d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                                       c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                                 </g>
+                              </g>
+                              <g>
+                                 <g>
+                                    <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                                       C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                                       c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                                       C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                                 </g>
+                              </g>
+                              <g>
+                                 <g>
+                                    <path
+                                       d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                                       c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                                 </g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                              <g>
+                              </g>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
+                     </li>
+
+                     {% else %}
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('Register')}}">Register</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('login')}}">SignIn</a>
+                     </li>
+
+                     {% endif %}
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!-- end header section -->
+   </div>
+   <!-- inner page section -->
+   <section class="inner_page_head">
+      <div class="container_fuild">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="full">
+                  <h3>Your Cart</h3>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end inner page section -->
+   <!-- Cart section -->
+   <div class="container">
+      <table id="cart" class="table table-hover table-condensed" style="margin-top:20px ;">
+         <thead>
+            <tr>
+               <th style="width:50%">Product</th>
+               <th style="width:10%">Price</th>
+               <!-- <th style="width:8%">Quantity</th> -->
+               <th style="width:30%" class="text-center">Subtotal</th>
+               <th style="width:10%"></th>
+            </tr>
+         </thead>
+         {% set ns = namespace(totalValue=0) %}
+         {% if cart_data %}
+         {% for data in cart_data %}
+
+         {% set ns.totalValue = ns.totalValue + data.Prod_Price %}
+         <tbody>
+            <tr>
+               <td data-th="Product">
+                  <div class="row">
+                     <div class="col-sm-4 hidden-xs"><img style="height:70px; max-width: 40px;" class="cart_img"
+                           src="{{url_for('static',filename='images/' + data.Prod_URl + '')}}" alt="..." /></div>
+                     <div class="col-sm-6">
+                        <h4 class="nomargin">{{data.Prod_name}}</h4>
+                        <p>{{data.Prod_desc}}</p>
+                     </div>
+                  </div>
+               </td>
+               <td data-th="Price">€{{data.Prod_Price}}</td>
+               <!-- <td data-th="Quantity">
+                                    <input type="number" class="form-control text-center" value="1">
+                                </td> -->
+               <td data-th="Subtotal" class="text-center">€{{data.Prod_Price}}</td>
+               <td class="actions" data-th="">
+                  <!-- <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button> -->
+                  <a href="DeleteCartItem/{{data.CartItem_id}}"> <button class="btn btn-sm"
+                        style="background-color: #CDB78D; color: #fff;"><i class="fa fa-trash-o"></i></button></a>
+               </td>
+            </tr>
+         </tbody>
+         {% endfor%}
+         <tfoot>
+            <form  method= "POST" >
+            <tr>
+
+               <!-- <a href="{{url_for('Product')}}" class="btn " style="background-color: #CDB78D; color: #fff;"><i
+                  class="fa fa-angle-left"></i> Continue Shopping</a> -->
+               <td> <label for="Order_location">Location</label>
+                  <select id="Order_location" name="Order_location"  required class="form-control">
+                     <option value="" selected="true" disabled>Select Location</option>
+                     {% for data in locations %}
+                    
+                     <option value="{{ data.location }}">{{ data.location }}</option>
+                     {% endfor %}
+                     
+
+                  </select>
+               </td>
+               <td colspan="2" class="hidden-xs"></td>
+               <td class="hidden-xs text-center" id = "Charges"><strong>Total €{{ ns.totalValue}}</strong></td>
+               <td>
+                 
+                     {{ form.csrf_token }}
+                    
+                        
+                        <input id = "Order_price" name= "Order_price" type="hidden" value ="{{ns.totalValue}}" >
+                        
+
+                        
+                      
+                           {{form.submit(value="Check Out", class="btn" ,style="background-color: #CDB78D; color: #fff;")}}
+                           <!-- <a href="#" class="btn" >Checkout </a> -->
+                        
+                     
+                  
+               </td>
+            </tr>
+         </form>
+          
+         </tfoot>
+
+         {% else %}
+         <p>no items in Your cart</p>
+         {% endif %}
+      </table>
+   </div>
+
+
+   <style>
+      .table>tbody>tr>td,
+      .table>tfoot>tr>td {
+         vertical-align: middle;
+      }
+
+      @media screen and (max-width: 600px) {
+         table#cart tbody td .form-control {
+            width: 20%;
+            display: inline !important;
+         }
+
+         .actions .btn {
+            width: 36%;
+            margin: 1.5em 0;
+         }
+
+         .actions .cart_img {
+            width: 5px;
+            height: 5px;
+
+         }
+
+         img {
+            width: 5px;
+            height: 5px;
+         }
+
+         .actions .btn-info {
+            float: left;
+         }
+
+         .actions .btn-danger {
+            float: right;
+         }
+
+         .btn-warning {
+            background-color: #CDB78D;
+            color: #fff;
+         }
+
+         table#cart thead {
+            display: none;
+         }
+
+         table#cart tbody td {
+            display: block;
+            padding: .6rem;
+            min-width: 320px;
+         }
+
+         table#cart tbody tr td:first-child {
+            background: #CDB78D;
+            color: #fff;
+         }
+
+         table#cart tbody td:before {
+            content: attr(data-th);
+            font-weight: bold;
+            display: inline-block;
+            width: 8rem;
+         }
+
+
+
+         table#cart tfoot td {
+            display: block;
+         }
+
+         table#cart tfoot td .btn {
+            display: block;
+         }
+
+      }
+   </style>
+   <!-- <script>
+      function changeText(el) {
+         a = document.getElementById('inputState').value ;
+         document.getElementById('Charges').innerHTML(a)
+      }
+   </script> -->
+
+
+   <!-- end Cart section -->
+   <!-- footer section -->
+   <footer class="footer_section">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4 footer-col">
+               <div class="footer_contact">
+                  <h4>
+                     Reach at..
+                  </h4>
+                  <div class="contact_link_box">
+                     <a href="">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>
+                           Location
+                        </span>
+                     </a>
+                     <a href="https://wa.me/+49 5849 58 34 38">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>
+                        Whatsapp +49 5849 58 34 38
+                        </span>
+                        </a>
+                        <a href="">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>
+                           LoveBox@reallygreatsite.com
+                        </span>
+                        </a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 footer-col">
+               <div class="footer_detail">
+                  <a href="index.html" class="footer-logo">
+                     LoveBox
+                  </a>
+                  <p>
+                     Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                     Latin words, combined with
+                  </p>
+                  <div class="footer_social">
+                     <a href="">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                     </a>
+                     <a href="">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                     </a>
+                     <a href="">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                     </a>
+                     <a href="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                     </a>
+                     <a href="">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 footer-col">
+               <div class="map_container">
+                  <div class="map">
+                     <div id="googleMap"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-info">
+            <div class="col-lg-7 mx-auto px-0">
+               <p>
+                  &copy; <span id="displayYear"></span> All Rights Reserved By
+                  <a href="#">LoveBox</a><br>
+
+                  Distributed By <a href="#" target="_blank">LoveBox</a>
+               </p>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- footer section -->
+   <!-- jQery -->
+   <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+   <!-- popper js -->
+
+   <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+   <!-- bootstrap js -->
+   <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+   <!-- custom js -->
+   <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+
+</html>
