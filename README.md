@@ -9,7 +9,7 @@ Software Modules/Frameworks Used:Python microweb framework Flask, CSS framework 
 
 STEP-BY-STEP INSTRUCTIONS TO RE-CREATE THE PROTOTYPE:
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. Project Directory Set-Up
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 *Choose a multi-programming-language supoorted source code editor (VS Code recommended).
@@ -67,4 +67,35 @@ STEP-BY-STEP INSTRUCTIONS TO RE-CREATE THE PROTOTYPE:
 
 ![Image](https://user-images.githubusercontent.com/102164507/177009301-22d02cf2-1792-4f59-b695-7f13ae83e5ff.PNG)
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+4. Adding Static And Template Files
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. Route Definition
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Routes include all the various pages that a user potentially visit
+
+*Go to the routes.py file
+
+*Use the annotaion @app.route('/[URL OF ENDPOINT]') and define a function under the annotation. Pass the render_tempate function to read html files.
+
+>@@app.route('/[URL OF ENDPOINT]') 
+>def NAME_OF_THE_FUNCTION():
+>    return render_tempate('[HTML FILE NAME]')  
+
+![Image](https://user-images.githubusercontent.com/102164507/177010920-ee8d0857-c605-4076-ba1e-6e497a73eaf1.PNG
+)
+
+
+
+*Move back to the __init__.py file and import the defined routes
+
+>from market import routes
