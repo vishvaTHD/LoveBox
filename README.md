@@ -1,3 +1,4 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 Hardware Components: A local server (Or personal computer) with 8GB RAM, 512GB SSD storage, Intel Core i3 Processor.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 Software Modules/Frameworks Used:Python microweb framework Flask, CSS framework Bootstrap, JS Library JQuery, Magic Zoom Plus, SQLite Database engine.
