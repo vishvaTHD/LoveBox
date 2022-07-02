@@ -24,6 +24,9 @@ STEP-BY-STEP INSTRUCTIONS TO RE-CREATE THE PROTOTYPE:
 
 *Exit the market folder and define an app.py Python file within the root project folder to intiate the website on the local server.
 
+![Image](https://user-images.githubusercontent.com/102164507/177009387-c1d5757a-294d-4071-9894-083909e886fc.PNG)
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 2. Package Installation
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
