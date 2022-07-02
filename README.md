@@ -8,7 +8,7 @@ Step-by-Step Instructions to Re-Create The Prototype:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. Project Directory Set-Up
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 *Choose a multi-programming-language supoorted source code editor (VS Code recommended).
 
 *Define a folder (In our case market) to store the codebase for the wesbite.
