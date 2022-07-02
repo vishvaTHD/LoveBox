@@ -9,10 +9,15 @@ Step-by-Step Instructions to Re-Create The Prototype:
 1. Project Directory Set-Up
 
 *Choose a multi-programming-language supoorted source code editor (VS Code recommended).
+
 *Define a folder (In our case market) to store the codebase for the wesbite.
+
 *Define two subfolders static and templates within the market folder.
+
 *Define an __init__.py file within the market folder to change its form to a Python package.
+
 *Define Python files forms.py (for authentication), models.py (to store database models), routes (to store the main views or URL endpoints of the front-end)
+
 *Exit the market folder and define an app.py Python file within the root project folder to intiate the website on the local server.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
