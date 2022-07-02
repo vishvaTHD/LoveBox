@@ -60,6 +60,7 @@ STEP-BY-STEP INSTRUCTIONS TO RE-CREATE THE PROTOTYPE:
 >if __name__ == "__main__":
 >    app.run(debug=True, threaded=True)
 
-*Click on the link to get a preview of the application
+*Click on the link to get a preview of the application,
+![Image](https://drive.google.com/file/d/1Q7RF6sh16CWngOmr0pmd7nQCpGbFnBzb/view?usp=sharing)
 
 
