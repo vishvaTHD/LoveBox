@@ -1,10 +1,13 @@
 Hardware Components: A local server (Or personal computer) with 8GB RAM, 512GB SSD storage, Intel Core i3 Processor.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 Software Modules/Frameworks Used:Python microweb framework Flask, CSS framework Bootstrap, JS Library JQuery, Magic Zoom Plus, SQLite Database engine.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Step-by-Step Instructions to Re-Create The Prototype:
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. Project Directory Set-Up
----------------------------
+
 *Choose a multi-programming-language supoorted source code editor (VS Code recommended).
 *Define a folder (In our case market) to store the codebase for the wesbite.
 *Define two subfolders static and templates within the market folder.
@@ -12,8 +15,10 @@ Step-by-Step Instructions to Re-Create The Prototype:
 *Define Python files forms.py (for authentication), models.py (to store database models), routes (to store the main views or URL endpoints of the front-end)
 *Exit the market folder and define an app.py Python file within the root project folder to intiate the website on the local server.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 2. Package Installation
------------------------
+
 *Ensure that you have a working python interpretor installed on your local server. If not vist https://www.python.org/downloads/ and select the desired version
 
 *Use the following command either on your local terminal or the one provided with VS Code to install Flask,
@@ -25,8 +30,10 @@ Step-by-Step Instructions to Re-Create The Prototype:
 *Use the follwoing command to install SQLite for Flask,
 >pip install flask-sqlalchemy
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 3. Intializing the Flask Application
-------------------------------------
+
 *Open the __init__.py file and import flask,
 >from flask import Flask
 
