@@ -60,4 +60,4 @@ Step-by-Step Instructions to Re-Create The Prototype:
 
 *Click on the link to get a preview of the application
 
-![initializing the application](code\market\static\images\instructions\1- Intializing Local Server.png)
+![initializing the application](LoveBox\Code\market\static\images\instructions\1- Intializing Local Server.png)
