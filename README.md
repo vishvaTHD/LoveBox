@@ -43,9 +43,9 @@ Step-by-Step Instructions to Re-Create The Prototype:
 
 *Add the follwing code to kick start the local web server,
 
-if __name__ == "__main__":
-    app.run(debug=True, threaded=True)
+>if __name__ == "__main__":
+>    app.run(debug=True, threaded=True)
 
 *Click on the link to get a preview of the application
 
-![initializing the application](C:\Users\vishv\Desktop\LoveBox\Code\market\static\images\instructions\1- Intializing Local Server.png)
+![initializing the application](\market\static\images\instructions\1- Intializing Local Server.png)
