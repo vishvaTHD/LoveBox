@@ -61,6 +61,6 @@ STEP-BY-STEP INSTRUCTIONS TO RE-CREATE THE PROTOTYPE:
 >    app.run(debug=True, threaded=True)
 
 *Click on the link to get a preview of the application,
-![Image](https://drive.google.com/file/d/1Q7RF6sh16CWngOmr0pmd7nQCpGbFnBzb/view?usp=sharing)
+![Image!](https://user-images.githubusercontent.com/102164507/177009020-b97f6075-aff9-4a95-91de-08415ffb312c.png)
 
 
