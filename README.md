@@ -4,6 +4,9 @@ Hardware Components: A local server (Or personal computer) with 8GB RAM, 512GB S
 Software Modules/Frameworks Used:Python microweb framework Flask, CSS framework Bootstrap, JS Library JQuery, Magic Zoom Plus, SQLite Database engine.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+
+
 STEP-BY-STEP INSTRUCTIONS TO RE-CREATE THE PROTOTYPE:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
