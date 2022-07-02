@@ -22,9 +22,8 @@ Step-by-Step Instructions to Re-Create The Prototype:
 *Exit the market folder and define an app.py Python file within the root project folder to intiate the website on the local server.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 2. Package Installation
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 *Ensure that you have a working python interpretor installed on your local server. If not vist https://www.python.org/downloads/ and select the desired version
 
 *Use the following command either on your local terminal or the one provided with VS Code to install Flask,
@@ -37,9 +36,8 @@ Step-by-Step Instructions to Re-Create The Prototype:
 >pip install flask-sqlalchemy
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 3. Intializing the Flask Application
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 *Open the __init__.py file and import flask,
 >from flask import Flask
 
