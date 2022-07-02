@@ -4,7 +4,7 @@ Hardware Components: A local server (Or personal computer) with 8GB RAM, 512GB S
 Software Modules/Frameworks Used:Python microweb framework Flask, CSS framework Bootstrap, JS Library JQuery, Magic Zoom Plus, SQLite Database engine.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Step-by-Step Instructions to Re-Create The Prototype:
+STEP-BY-STEP INSTRUCTIONS TO RE-CREATE THE PROTOTYPE:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. Project Directory Set-Up
@@ -59,4 +59,4 @@ Step-by-Step Instructions to Re-Create The Prototype:
 
 *Click on the link to get a preview of the application
 
-![initializing the application](LoveBox\Code\market\static\images\instructions\1- Intializing Local Server.png)
+
