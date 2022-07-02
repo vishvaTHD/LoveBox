@@ -73,7 +73,15 @@ STEP-BY-STEP INSTRUCTIONS TO RE-CREATE THE PROTOTYPE:
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+*Use the Static folder for all CSS, JavaScript and image files
 
+*Use the template folder for all the HTML files
+
+*Add the code base for all HTML templates. 
+
+*Create two seperate CSS files, one for styling (styles.css) and for Bootstrap (bootstrap.css)
+
+*Link the style and Bootstrap files with the HTML by using the <link/> tag in the <head> section
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -93,8 +101,6 @@ STEP-BY-STEP INSTRUCTIONS TO RE-CREATE THE PROTOTYPE:
 
 ![Image](https://user-images.githubusercontent.com/102164507/177010920-ee8d0857-c605-4076-ba1e-6e497a73eaf1.PNG
 )
-
-
 
 *Move back to the __init__.py file and import the defined routes
 
