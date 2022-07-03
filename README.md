@@ -83,6 +83,10 @@ STEP-BY-STEP INSTRUCTIONS TO RE-CREATE THE PROTOTYPE:
 
 *Link the style and Bootstrap files with the HTML by using the <link/> tag in the <head> section
 
+*Add links to the JavaScript files on the bootom of each HTML file using the <script> tag
+
+![Image](https://user-images.githubusercontent.com/102164507/177031227-6e8879de-90a9-4064-bd39-ff2abd5cef4d.PNG)
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 5. Route Definition
@@ -127,12 +131,14 @@ STEP-BY-STEP INSTRUCTIONS TO RE-CREATE THE PROTOTYPE:
 *Create a class that inherits both the database object and usermixin for different object (This is for the users)
 
 >class Users(db.Model,UserMixin):
->    User_id = db.Column(db.Integer, primary_key=True)
+>   User_id = db.Column(db.Integer, primary_key=True)
 >   User_name = db.Column(db.String(30), unique=True, nullable=False)
 >   User_Email = db.Column(db.String(40), nullable=False)
->    User_pass = db.Column(db.String(40), nullable=False)
->    User_cart = db.relationship('Cart', backref='users', lazy = True)
->    User_Orders = db.relationship('Orders', backref='users',lazy = True)
+>   User_pass = db.Column(db.String(40), nullable=False)
+>   User_cart = db.relationship('Cart', backref='users', lazy = True)
+>   User_Orders = db.relationship('Orders', backref='users',lazy = True)
 
 *Now do the same for products, carts, cart items, orders, order details and payment
+
+!IMPOTRANT: THE USERMIXIN INHERITENCE IS ONLY FOR THE USER OBJECT
 
