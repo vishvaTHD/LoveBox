@@ -105,3 +105,34 @@ STEP-BY-STEP INSTRUCTIONS TO RE-CREATE THE PROTOTYPE:
 *Move back to the __init__.py file and import the defined routes
 
 >from market import routes
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6. Database Set-Up
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Move to the __init__.py and import sqlalchemy from Flask
+
+>from flask_sqlalchemy import SQLAlchemy 
+
+*Now move back to the models.py file and import the database object from the market file
+
+>from market import db
+
+*Now import the custom UserMixin class with the properties for user login
+
+>from flask_login import UserMixin
+
+*Create a class that inherits both the database object and usermixin for different object (This is for the users)
+
+>class Users(db.Model,UserMixin):
+>    User_id = db.Column(db.Integer, primary_key=True)
+>   User_name = db.Column(db.String(30), unique=True, nullable=False)
+>   User_Email = db.Column(db.String(40), nullable=False)
+>    User_pass = db.Column(db.String(40), nullable=False)
+>    User_cart = db.relationship('Cart', backref='users', lazy = True)
+>    User_Orders = db.relationship('Orders', backref='users',lazy = True)
+
+*Now do the same for products, carts, cart items, orders, order details and payment
+
