@@ -38,9 +38,6 @@
 
 Herokuapp link: https://lovebox1.herokuapp.com/
 
-Demo Video:
-
-
 
 ## Step-By-Step Instructions to  Replicate the Application
 
